@@ -6,16 +6,20 @@
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+
+    <link rel="stylesheet" type="text/css" href="css/lightbox.css" >
 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="css/lightbox.css" >
 
-    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
-    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.1.1.js"></script> -->
 
-    <script type="text/javascript" src="script.js"> </script>
+    <script type="text/javascript" src="js/script.js"> </script>
+    <script type="text/javascript" src="js/lightbox.min.js"> </script>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.js"></script>
-
 
   </head>
   <body>
@@ -24,19 +28,40 @@
 
 
     <header class="section">
-      <nav>
+      <div class="button_container" id="toggle">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+      </div>
+
+      <div class="overlay" id="overlay">
+        <nav class="overlay-menu">
+          <ul>
+            <li ><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- <nav>
         <ul>
           <li> <a href="#home"> Home </a> </li>
           <li> <a href="#favorites"> Favorites </a> </li>
           <li> <a href="#category"> Category </a> </li>
+          <li> <a href="#shop"> Shop </a> </li>
           <li> <a href="#about"> About </a> </li>
 
         </ul>
 
-      </nav>
+      </nav> -->
 
       <div class="header-wrapper">
-        <div class="header-title">
+        <img class="tryme" src="img/bg-1.png" >
+
+
+        <div class="header-title your-element" >
+
 
           <h4>“Have no fear of perfection -
               you'll never reach it.”  </h4>
@@ -45,25 +70,61 @@
 
 
         </div>
-        <div class="header-img">
-
-          <!-- <img src="img/palm-leaves.png" alt=""> -->
-        </div>
 
       </div>
 
     </header>
 
     <div class="favorites-wrapper section">
-      <div class="favorites-title">
+      <div class="favorites-container">
+        <div class="favorites-title">
+          <h2>  Favorites </h2>
+        </div>
 
+          <ul>
+            <li> <a href="img/art/abstract1.jpg" data-lightbox="favorites" data-title="My caption"> <img src="img/art/abstract1.jpg" alt=""> </a> </li>
+            <li> <a href="img/art/abstract3.jpg" data-lightbox="favorites" data-title="My caption"> <img src="img/art/abstract3.jpg" alt=""> </a>  </li>
+            <li> <a href="img/art/bubbles2.jpg" data-lightbox="favorites" data-title="My caption"> <img src="img/art/bubbles2.jpg" alt=""> </a>  </li>
+            <li> <a href="img/art/mini.jpg" data-lightbox="favorites" data-title="My caption"> <img src="img/art/mini.jpg" alt=""> </a>  </li>
+            <li> <a href="img/art/sky.jpg" data-lightbox="favorites" data-title="My caption"> <img src="img/art/sky.jpg" alt=""> </a>  </li>
+            <li> <a href="img/art/abstract5.jpg" data-lightbox="favorites" data-title="My caption"> <img src="img/art/abstract5.jpg" alt=""> </a>  </li>
+
+          </ul>
       </div>
+
+
     </div>
 
     <div class="categories-wrapper section">
-      <div class="categories">
+      <div class="categories-container">
+        <div class="categories-title">
+          <h2>  Categories </h2>
+        </div>
+
+          <ul>
+            <li> <a href="img/art/abstract1.jpg" data-lightbox="categories" data-title="My caption"> <img src="img/art/abstract1.jpg" alt="">
+            <span> Abstract </span> </a> </li>
+            <li> <a href="img/art/abstract3.jpg" data-lightbox="categories" data-title="My caption"> <img src="img/art/abstract3.jpg" alt=""> </a>  </li>
+            <li> <a href="img/art/bubbles2.jpg" data-lightbox="categories" data-title="My caption"> <img src="img/art/bubbles2.jpg" alt=""> </a>  </li>
+            <li> <a href="img/art/mini.jpg" data-lightbox="categories" data-title="My caption"> <img src="img/art/mini.jpg" alt=""> </a>  </li>
+            <li> <a href="img/art/sky.jpg" data-lightbox="categories" data-title="My caption"> <img src="img/art/sky.jpg" alt=""> </a>  </li>
+            <li> <a href="img/art/abstract5.jpg" data-lightbox="categories" data-title="My caption"> <img src="img/art/abstract5.jpg" alt=""> </a>  </li>
+
+          </ul>
+      </div>
+    </div>
+
+
+    <div class="shop-wrapper section">
+      <div class="shop-container">
+        <h2> Shop</h2>
+        <p> Hi, my name is Andreea Uta. I've been painting for over 8 years now. I love to
+        play around with acrylic and oil. I am also a web developer and graphic designer.
+      </p>
+
 
       </div>
+
     </div>
 
 
