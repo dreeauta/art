@@ -3,10 +3,12 @@
 }
 
 
-/*nav {
+
+/* nav {
   float: right;
   padding: 30px 65px 10px 0px;
   background-color: white;
+  z-index: 1000;
 }
 
 nav li {
@@ -36,8 +38,7 @@ nav a {
   text-decoration: none;
   margin: 20px 30px;
   padding-bottom: 10px;
-}*/
-
+} */
 
 
 
@@ -45,11 +46,12 @@ nav a {
 
 
 .header-wrapper {
+  height: 100vh;
   /*width: 90%;
   margin: auto;*/
-  height: 100vh;
   /*background-image: url(../img/header-bg2.jpg);*/
   background-size: cover;
+  font-family: 'Gudea', sans-serif;
 
 }
 
@@ -59,19 +61,17 @@ nav a {
   position: absolute;
   padding-top: 75px;
   padding-left: 20px;
-  top: 35%;
-  left: 10%;
+  bottom: 30%;
+  right: 10%;
   width: 40%;
-  height: 30%;
   background-color: white;
   font-size: 1.5em;
   opacity: .8;
   z-index: 10;
+  line-height: 1.5em;
 }
 
-.header-title h4 {
-  margin-bottom: 30px;
-}
+
 
 .header-img {
   position: absolute;
@@ -86,27 +86,139 @@ nav a {
 }
 
 
-.favorites-wrapper {
-  width: 90%;
+.categories-wrapper {
+  /*background-color: lightblue;*/
+
+
+  position: relative;
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.80) 0%, rgba(0,0,0,.2) 100%);
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.80) 0%,rgba(0,0,0,.2) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.80) 0%,rgba(0,0,0,.2) 100%);
+
+  }
+
+.categories-container {
+  text-align: center;
+  /* width: 80%;
+  margin: auto; */
+  padding: 40px 0px;
+}
+
+.categories-title {
+  font-size: 1.8em;
+  /* padding: 20px 40px; */
+  margin-bottom: 30px;
+  display: inline-block;
+  letter-spacing: .15em;
+  z-index: 1000;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  font-family: 'Gudea', sans-serif;
+  /* background: -moz-linear-gradient(top, rgba(0,0,0,0.80) 0%, rgba(0,0,0,.2) 100%);
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.80) 0%,rgba(0,0,0,.2) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.80) 0%,rgba(0,0,0,.2) 100%); */
+}
+
+.categories-container ul{
   margin: auto;
+  width: 70%;
+  text-align: center;
+}
+
+.categories-container li {
+  display: inline;
+  position: relative;
+
+}
+
+.categories-container a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Gudea', sans-serif;
+  letter-spacing: .2em;
+  text-shadow: 3px 3px 5px #000000;
+}
+
+.categories-container li span{
+  opacity: 0;
+  position: absolute;
+  right: 20px;
+  bottom: 80px;
+  width: 93%;
+  /* background-color: rgba(255,255,255,.7); */
+  font-size: 1.2em;
+  padding: 20px 40px;
+  /* background: -moz-linear-gradient(top, rgba(255,255,255,255..9) 0%, rgba(255,255,255,.3) 100%);
+  background: -webkit-linear-gradient(top, rgba(255,255,255,0.9) 0%,rgba(255,255,255,0.3) 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,0.9) 0%,rgba(255,255,255,0.3) 100%); */
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.80) 0%, rgba(0,0,0,.2) 100%);
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.80) 0%,rgba(0,0,0,.2) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.80) 0%,rgba(0,0,0,.2) 100%);
+
+}
+
+.categories-container li span:hover{
+  opacity: 1;
+}
+
+.categories-container img {
+  /*width: 30%;*/
+  display: inline;
+  height: 180px;
+  width: 30%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-bottom: 20px;
+  margin-right: 15px;
+
+}
+
+.categories-container img:hover {
+  -moz-transform: scale(.95);
+  -webkit-transform: scale(.95);
+  transform: scale(.95);
+
+}
+
+
+.favorites-wrapper {
   background-color: white;
-  height: 100vh;
+
+
   position: relative;
 }
 
+/* .favorites-container {
+  width: 80%;
+  margin: auto;
+} */
+
 .favorites-title {
-  font-size: 3em;
+  font-size: 1.8em;
   padding: 30px 40px;
-  background-color: white;
   display: inline-block;
   position: absolute;
   top: 40%;
   letter-spacing: .15em;
   z-index: 1000;
+  background-color: rgba(255,255,255,.7);
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  font-family: 'Gudea', sans-serif;
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.80) 0%, rgba(0,0,0,.2) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.80) 0%,rgba(0,0,0,.2) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0,0,0,0.80) 0%,rgba(0,0,0,.2) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+}
+
+.favorites-container a {
+  text-decoration: none;
 }
 
 .favorites-container ul{
-  margin: auto;
+  /* margin: auto; */
+  width: 90%;
   float: right;
   text-align: center;
 }
@@ -121,12 +233,15 @@ nav a {
 }
 
 .favorites-container img {
-  width: 30%;
+  height: 200px;
+  width: 25%;
   display: inline;
-  height: 270px;
+  /* height: 270px; */
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  margin-top: 20px;
+  margin-left: 15px;
 }
 
 .favorites-container img:hover {
@@ -138,67 +253,32 @@ nav a {
 
 
 
-.categories-wrapper {
-  width: 90%;
+
+.about-container, .contact-container {
+  width: 80%;
   margin: auto;
-  /*background-color: lightblue;*/
-  height: 100vh;
-  position: relative;
 }
 
-.categories-container {
+.about-container h2,.contact-container h2 {
+  padding: 40px 0;
   text-align: center;
-
+  font-size: 2em;
 }
-
-.categories-title {
-  font-size: 3em;
-  padding: 30px 40px;
-  background-color: white;
-  display: inline-block;
-  letter-spacing: .15em;
-  z-index: 1000;
-  position: absolute;
-  top: 40%;
-  right: 0;
-}
-
-.favorites-container ul{
-  margin: auto;
-  float: right;
-  text-align: center;
-}
-
-.categories-container li {
-  display: inline;
-
-}
-
-.categories-container img {
-  /*width: 30%;*/
-  display: inline;
-  height: 300px;
-  width: 30%;
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.categories-container img:hover {
-  -moz-transform: scale(.95);
-  -webkit-transform: scale(.95);
-  transform: scale(.95);
-
-}
-
-.about-wrapper {
-  width: 90%;
-  margin: auto;
-  background-color: blue;
-  height: 100vh;
+.about-container p, .contact-container p {
+  margin-bottom: 40px;
 }
 
 .about {
   width: 70%;
   color: white;
+}
+
+.quote h4 {
+  margin-bottom: 30px;
+  font-size: 1.5em;
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+  width: 40%
+
 }

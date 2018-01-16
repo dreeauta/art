@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
-	$('#fullpage').fullpage();
+	// $('#fullpage').fullpage();
+
 
 	// nav toggle
 
@@ -69,6 +70,8 @@ $(document).mousemove(function(event){
 //     $(document.body).css('background','rgb('+rgb.join(',')+')');
 //
 // }).resize();
+
+//hover category subtitle
 
 
 });

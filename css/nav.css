@@ -1,13 +1,12 @@
 
-
 .button_container {
-  position: fixed;
+  position: fixed !important;
   top: 5%;
-  right: 2%;
+  left: 5%;
   height: 27px;
   width: 35px;
   cursor: pointer;
-  z-index: 110;
+  z-index: 1010;
   -webkit-transition: opacity .25s ease;
   transition: opacity .25s ease;
 }
@@ -89,14 +88,16 @@
 .overlay nav {
   position: relative;
   height: 70%;
-  top: 50%;
+  top: 45%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  font-size: 50px;
-  font-family: 'Vollkorn', serif;
+  font-size: 40px;
+  font-family: 'Gudea', sans-serif;
   font-weight: 400;
   text-align: center;
+  letter-spacing: .3em;
 }
+
 .overlay ul {
   list-style: none;
   padding: 0;
@@ -123,16 +124,19 @@
 .overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
   width: 100%;
 }
+
+
 .overlay ul li a:after {
   content: '';
   position: absolute;
-  bottom: 0;
+  /* bottom: 0; */
+  top: 20px;
   left: 50%;
   width: 0%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
   height: 3px;
   background: #FFF;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   -webkit-transition: .35s;
   transition: .35s;
 }
