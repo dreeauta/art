@@ -29,7 +29,8 @@
   background: #FFF;
 }
 .button_container span {
-  background: #FF5252;
+  /* background: #FF5252; */
+  background: #F1C747;
   border: none;
   height: 5px;
   width: 100%;
@@ -49,7 +50,8 @@
 
 .overlay {
   position: fixed;
-  background: #FF5252;
+  /* background: #FF5252; */
+  background: #F1C747;
   top: 0;
   left: 0;
   width: 100%;

@@ -11,43 +11,43 @@ $(document).ready(function() {
 	   $('#overlay').toggleClass('open');
 	  });
 
-
-var image_src = {
-    topleft: "img/bg-2.png",
-    topright: "img/bg3.png",
-    bottomleft: "img/bg-4.png",
-    bottomright: "img/bg-5.png"
-};
-
-$(document).mousemove(function(event){
-    var mloc = {
-        x: event.pageX,
-        y: event.pageY
-    };
-
-    if(
-        (mloc.x >= 0 && mloc.x <= $(document).width()/2) &&
-        (mloc.y >= 0 && mloc.y <= $(document).height()/2)
-    ){
-        $(".tryme").attr("src", image_src.topleft);
-    }else if(
-        (mloc.x >= $(document).width()/2 && mloc.x <= $(document).width()) &&
-        (mloc.y >= 0 && mloc.y <= $(document).height()/2)
-    ){
-        $(".tryme").attr("src", image_src.topright);
-    }else if(
-        (mloc.x >= 0 && mloc.x <= $(document).width()/2) &&
-        (mloc.y >= $(document).height()/2 && mloc.y <= $(document).height())
-    ){
-        $(".tryme").attr("src", image_src.bottomleft);
-    }else if(
-        (mloc.x >= $(document).width()/2 && mloc.x <= $(document).width()) &&
-        (mloc.y >= $(document).height()/2 && mloc.y <= $(document).height())
-    ){
-        $(".tryme").attr("src", image_src.bottomright);
-    }
-
-});
+// 
+// var image_src = {
+//     topleft: "img/bg-2.png",
+//     topright: "img/bg3.png",
+//     bottomleft: "img/bg-4.png",
+//     bottomright: "img/bg-5.png"
+// };
+//
+// $(document).mousemove(function(event){
+//     var mloc = {
+//         x: event.pageX,
+//         y: event.pageY
+//     };
+//
+//     if(
+//         (mloc.x >= 0 && mloc.x <= $(document).width()/2) &&
+//         (mloc.y >= 0 && mloc.y <= $(document).height()/2)
+//     ){
+//         $(".tryme").attr("src", image_src.topleft);
+//     }else if(
+//         (mloc.x >= $(document).width()/2 && mloc.x <= $(document).width()) &&
+//         (mloc.y >= 0 && mloc.y <= $(document).height()/2)
+//     ){
+//         $(".tryme").attr("src", image_src.topright);
+//     }else if(
+//         (mloc.x >= 0 && mloc.x <= $(document).width()/2) &&
+//         (mloc.y >= $(document).height()/2 && mloc.y <= $(document).height())
+//     ){
+//         $(".tryme").attr("src", image_src.bottomleft);
+//     }else if(
+//         (mloc.x >= $(document).width()/2 && mloc.x <= $(document).width()) &&
+//         (mloc.y >= $(document).height()/2 && mloc.y <= $(document).height())
+//     ){
+//         $(".tryme").attr("src", image_src.bottomright);
+//     }
+//
+// });
 
 // change background color on mouse movement
 
