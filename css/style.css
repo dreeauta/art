@@ -5,7 +5,6 @@
 
 
 .container {
-  padding: 50px 0;
   font-family: 'Gudea', sans-serif;
 }
 
@@ -196,19 +195,25 @@ nav a {
 
 }
 
+.art-title {
 
-.favorites-wrapper {
+}
+
+
+.featured-wrapper {
   position: relative;
 }
 
-.favorites-container {
-  width: 100%;
-  height: 2500px;
+.featured-container {
+  width: 90%;
+  margin: auto;
+  margin-top: 140px;
+  height: 1850px;
   background:   #f5f5f0;
 }
 
-.favorites-title {
-  padding: 20px 40px;
+.featured-title {
+  padding: 20px 35px;
   display: inline-block;
   text-align: center;
   letter-spacing: .15em;
@@ -217,55 +222,67 @@ nav a {
   font-family: 'Gudea', sans-serif;
   font-size: 70px;
   width: 50%;
-}
-
-.favorites-container a {
-  text-decoration: none;
-}
-
-.favorites-container ul{
-  text-align: center;
-}
-
-
-.favorites-container li {
-  display: inline-block;
-  width: 55%;
   background-color: white;
-  padding: 50px 20px;
 }
 
-.favorites-container li:nth-child(1n+1) {
-  float: left;
+.featured-artwork-container {
+    height: 420px;
+    width: 100%;
+    display: flex;
 }
 
-.favorites-container li:nth-child(2n + 1) {
-  float: right;
+
+.artwork-title {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  background-color: white;
 }
 
-.favorites-container li span {
-  position: absolute;
+.artwork-title span{
+  line-height: 50px;
 }
 
-.favorites-container img {
+.artwork-title a {
+  font-size: 14px;
+  text-decoration: none;
+  padding:10px 40px;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  transition: opacity .5s ease-in;
+}
+
+.artwork-title a:hover {
+  opacity: .7;
+}
+
+
+
+.artwork-image {
+  width: 50%;
+  display: inline;
+}
+
+
+.featured-container img {
   height: 400px;
-  width: 550px;
+  width: 100%;
   display: inline;
   /* height: 270px; */
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  margin-top: 20px;
-  margin-left: 15px;
+  padding: 20px;
 }
 
-.favorites-container img:hover {
-  -moz-transform: scale(.95);
-  -webkit-transform: scale(.95);
-  transform: scale(.95);
-
+.featured-container img:hover {
+  transform: scale(1.05);
 }
-
 
 
 .about-container, .contact-container {
@@ -276,11 +293,10 @@ nav a {
   clear: both;
 }
 
-.about-container h2,.contact-container h2 {
+.about-container h2, .contact-container h2 {
   padding: 40px 0;
   text-align: center;
   font-size: 2em;
-
 }
 
 .contact-container h2 {
