@@ -54,7 +54,7 @@
   display: inline-block;
   height: 10px;
   background: #F1C747;
-
+  opacity: .6;
 }
 
 .medium-line {
@@ -63,6 +63,7 @@
   height: 25px;
   background: #F1C747;
   margin: 10px 0px;
+  opacity: .6;
 }
 
 .small-line.right, .medium-line.right {
@@ -143,7 +144,7 @@
 }
 
 .categories-container img:hover {
-  -webkit-filter: hue-rotate(150deg);
+  filter: grayscale(50);
   opacity: .8;
 
 }
@@ -258,7 +259,7 @@
   padding: 40px 0;
   text-align: center;
   font-size: 2em;
-  border: 2px solid #E3C353;
+  /* border: 2px solid #E3C353; */
 }
 
 .about-container p, .contact-container p {

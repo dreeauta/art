@@ -54,7 +54,7 @@
   background: #F1C747;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 20%;
   height: 0%;
   opacity: 0;
   visibility: hidden;
@@ -67,7 +67,7 @@
   visibility: visible;
   height: 100%;
   z-index: 100;
-
+  width: 20%;
 }
 .overlay.open li {
   -webkit-animation: fadeInRight .5s ease forwards;
@@ -90,10 +90,10 @@
 .overlay nav {
   position: relative;
   height: 70%;
-  top: 45%;
+  top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  font-size: 40px;
+  font-size: 20px;
   font-family: 'Gudea', sans-serif;
   font-weight: 400;
   text-align: center;
@@ -123,6 +123,11 @@
   text-decoration: none;
   overflow: hidden;
 }
+
+.overlay ul li a:hover {
+  text-decoration: line-through;
+}
+
 .overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
   width: 100%;
 }
